@@ -14,8 +14,8 @@ sudo docker images
 sudo docker run -v ~/nap-tools/get-signatures:/tmp/convert app-protect-converter /opt/app_protect/bin/get-signatures -o /tmp/convert/signatures-report_2022-07-20.json
 
 # copy report into nap-dashboard/signatures and run python script
-cd ..
-ll nap-dashboard/signatures
-cp nap-tools/get-signatures/signatures-report_2022-07-28.json nap-dashboard/signatures/
-cd nap-dashboard/
-python3 signatures/upload-signatures.py signatures/signatures-report_2022-07-28.json localhost
+    cd ..
+    ll nap-dashboard/signatures
+    cp nap-tools/get-signatures/signatures-report_2022-07-28.json nap-dashboard/signatures/
+    cd nap-dashboard/
+    python3 signatures/upload-signatures.py signatures/signatures-report_2022-07-28.json localhost
