@@ -10,7 +10,7 @@ sudo docker build --no-cache -t app-protect-converter -f NAPupdateSIG-TC .
 # verify
 sudo docker images
 
-# generate latest Signature Report to enrich Grafan Dashboard
+# generate latest Signature Report to enrich Grafana Dashboard (source: https://github.com/skenderidis/nap-dashboard)
 sudo docker run -v ~/nap-tools/get-signatures:/tmp/convert app-protect-converter /opt/app_protect/bin/get-signatures -o /tmp/convert/signatures-report_2022-07-20.json
 
 # copy report into nap-dashboard/signatures and run python script
